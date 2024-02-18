@@ -29,7 +29,26 @@ body {
   border: none;
 }
 
+.secondary-btn {
+  background-color: #0307120d;
+  box-shadow: 5px 5px 10px #03050e0d;
+  padding: 1rem;
+  border-radius: 12px;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 500;
+}
+.secondary-btn:hover {
+  background-color: white;
+  box-shadow: 5px 5px 10px #0307120d;
+}
+
+.secondary-btn:focus {
+  background-color: var(--primary-color);
+}
+
 .paragraph-design {
+  color: #03071299;
   text-align: center;
   font-family: Inter;
   font-size: 18px;
