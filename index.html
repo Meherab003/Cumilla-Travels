@@ -54,7 +54,7 @@
         </nav>
 
         <!-- Banner Part -->
-        <section class="m-auto">
+        <section class="m-auto relative">
             <div class="hero h-[550px]  max-w-[1171px] m-auto" style="background-image: url(images/banner.png);">
                 <div class="bg-gradient-to-t from-[#030712] to-[#03071200]"></div>
                 <div class="hero-content text-center text-neutral-content">
@@ -73,11 +73,45 @@
                     </div>
                 </div>
             </div>
+
+
+            <!-- Overlay Cards -->
+            <div class="m-auto w-[1000px] flex justify-between z-10 absolute bottom-[-70px] left-[170px]">
+                <!-- Overlay Card 1 -->
+                <div
+                    class="w-72 h-36 flex items-center justify-center gap-3 rounded-3xl border-b-2 border-[#1dd100] bg-white">
+                    <img class="w-16 h-16" src="images/people.png" alt="">
+                    <div>
+                        <h2 class="title-design font-secondary text-start">500K+</h2>
+                        <p class="paragraph-design text-start">Registered users</p>
+                    </div>
+                </div>
+
+                <!-- Overlay Card 2 -->
+                <div
+                    class="w-72 h-36 flex items-center justify-center gap-3 rounded-3xl border-b-2 border-[#1dd100] bg-white">
+                    <img class="w-16 h-16" src="images/ticket-cupon.png" alt="">
+                    <div>
+                        <h2 class="title-design font-secondary text-start">1.7 lacks</h2>
+                        <p class="paragraph-design text-start">Tickets sold</p>
+                    </div>
+                </div>
+
+                <!-- Overlay Card 3 -->
+                <div
+                    class="w-72 h-36 flex items-center justify-center gap-3 rounded-3xl border-b-2 border-[#1dd100] bg-white">
+                    <img class="w-16 h-16" src="images/stoppage.png" alt="">
+                    <div>
+                        <h2 class="title-design font-secondary text-start">80K+</h2>
+                        <p class="paragraph-design text-start">Rental partners</p>
+                    </div>
+                </div>
+            </div>
         </section>
     </header>
 
     <!-- Discount Section  -->
-    <section class="w-[89%] m-auto flex flex-col justify-center">
+    <section class="w-[89%] m-auto flex flex-col justify-center mt-36 relative">
         <h2 class="title-design mb-12">Best offers for you</h2>
 
         <!-- Discount Container -->
@@ -97,7 +131,6 @@
                     <p class="text-xl font-medium light-black text-center">Coupon Code</p>
                 </div>
             </div>
-
             <!-- Discount 2 -->
             <div class="flex gap-10 bg-[#F78C9C] rounded-3xl">
                 <!-- Discount-text -->
@@ -114,6 +147,10 @@
                 </div>
             </div>
         </div>
+        <div class="w-[60px] h-[60px] bg-white rounded-full absolute top-[70px] left-[320px]"></div>
+        <div class="w-[60px] h-[60px] bg-white rounded-full absolute top-[290px] left-[320px]"></div>
+        <div class="w-[60px] h-[60px] bg-white rounded-full absolute top-[70px] left-[920px]"></div>
+        <div class="w-[60px] h-[60px] bg-white rounded-full absolute top-[290px] left-[920px]"></div>
         <button
             class="btn btn-outline border-[#1DD100] primary-text-color text-xl font-bold rounded-xl w-44 hover:bg-[#1DD100] hover:border-[#1DD100] m-auto">See
             All
@@ -135,7 +172,7 @@
         </div>
 
         <!-- ticket Information -->
-        <section class="flex bg-white m-auto rounded-3xl p-16">
+        <section class="flex bg-white m-auto rounded-3xl p-16 relative">
             <div class="flex flex-col flex-1 pr-16">
                 <div class="flex justify-between mb-8">
                     <div class="flex gap-3">
@@ -163,9 +200,9 @@
                         <p class="paragraph-design text-start text-black">9:00 PM</p>
                     </div>
                     <div class="flex justify-between p-6">
-                        <button class="secondary-btn">Boarding Point - Laxmipur</button>
-                        <button class="secondary-btn">Dropping Point - Bogura</button>
-                        <button class="secondary-btn">Est. Time - 11 Hour</button>
+                        <button class="secondary-btn py-2 text-[16px] ">Boarding Point - Laxmipur</button>
+                        <button class="secondary-btn py-2 text-[16px] ">Dropping Point - Bogura</button>
+                        <button class="secondary-btn py-2 text-[16px] ">Est. Time - 11 Hour</button>
                     </div>
                 </div>
             </div>
@@ -174,10 +211,12 @@
                 <h2 class="title-design text-3xl text-start">550 Taka</h2>
                 <p class="text-2xl font-semibold text-[#03071299]">Per Seat</p>
             </div>
+            <div class="w-[100px] h-[100px] bg-[#F7F8F8] rounded-full absolute top-[-50px] left-[815px]"></div>
+            <div class="w-[100px] h-[100px] bg-[#F7F8F8] rounded-full absolute top-[410px] left-[815px]"></div>
         </section>
 
         <!-- Select Your Tickets Part -->
-        <section class="flex bg-white m-auto rounded-3xl mt-7 p-8">
+        <section class="flex bg-white m-auto rounded-3xl mt-12 p-8">
             <div class="flex-1 flex flex-col gap-6 p-8 pt-0">
                 <h1 class="text-2xl font-semibold">Select Your Seat</h1>
                 <div class="flex justify-between">
@@ -191,10 +230,10 @@
 
                     <!-- seats  -->
                     <div class="flex items-center justify-between flex-1">
-                        <button class="secondary-btn text-[#03071280] px-10">A1</button>
-                        <button class="secondary-btn text-[#03071280] px-10">A2</button>
-                        <button class="secondary-btn text-[#03071280] px-10">A3</button>
-                        <button class="secondary-btn text-[#03071280] px-10">A4</button>
+                        <button class="secondary-btn text-[#03071280] px-8 py-2">A1</button>
+                        <button class="secondary-btn text-[#03071280] px-8 py-2">A2</button>
+                        <button class="secondary-btn text-[#03071280] px-8 py-2">A3</button>
+                        <button class="secondary-btn text-[#03071280] px-8 py-2">A4</button>
                     </div>
                 </div>
 
@@ -204,10 +243,10 @@
 
                     <!-- seats  -->
                     <div class="flex items-center justify-between flex-1">
-                        <button class="secondary-btn text-[#03071280] px-10">B1</button>
-                        <button class="secondary-btn text-[#03071280] px-10">B2</button>
-                        <button class="secondary-btn text-[#03071280] px-10">B3</button>
-                        <button class="secondary-btn text-[#03071280] px-10">B4</button>
+                        <button class="secondary-btn text-[#03071280] px-8 py-2">B1</button>
+                        <button class="secondary-btn text-[#03071280] px-8 py-2">B2</button>
+                        <button class="secondary-btn text-[#03071280] px-8 py-2">B3</button>
+                        <button class="secondary-btn text-[#03071280] px-8 py-2">B4</button>
                     </div>
                 </div>
 
@@ -217,10 +256,10 @@
 
                     <!-- seats  -->
                     <div class="flex items-center justify-between flex-1">
-                        <button class="secondary-btn text-[#03071280] px-10">C1</button>
-                        <button class="secondary-btn text-[#03071280] px-10">C2</button>
-                        <button class="secondary-btn text-[#03071280] px-10">C3</button>
-                        <button class="secondary-btn text-[#03071280] px-10">C4</button>
+                        <button class="secondary-btn text-[#03071280] px-8 py-2">C1</button>
+                        <button class="secondary-btn text-[#03071280] px-8 py-2">C2</button>
+                        <button class="secondary-btn text-[#03071280] px-8 py-2">C3</button>
+                        <button class="secondary-btn text-[#03071280] px-8 py-2">C4</button>
                     </div>
                 </div>
 
@@ -230,10 +269,10 @@
 
                     <!-- seats  -->
                     <div class="flex items-center justify-between flex-1">
-                        <button class="secondary-btn text-[#03071280] px-10">D1</button>
-                        <button class="secondary-btn text-[#03071280] px-10">D2</button>
-                        <button class="secondary-btn text-[#03071280] px-10">D3</button>
-                        <button class="secondary-btn text-[#03071280] px-10">D4</button>
+                        <button class="secondary-btn text-[#03071280] px-8 py-2">D1</button>
+                        <button class="secondary-btn text-[#03071280] px-8 py-2">D2</button>
+                        <button class="secondary-btn text-[#03071280] px-8 py-2">D3</button>
+                        <button class="secondary-btn text-[#03071280] px-8 py-2">D4</button>
                     </div>
                 </div>
 
@@ -243,10 +282,10 @@
 
                     <!-- seats  -->
                     <div class="flex items-center justify-between flex-1">
-                        <button class="secondary-btn text-[#03071280] px-10">E1</button>
-                        <button class="secondary-btn text-[#03071280] px-10">E2</button>
-                        <button class="secondary-btn text-[#03071280] px-10">E3</button>
-                        <button class="secondary-btn text-[#03071280] px-10">E4</button>
+                        <button class="secondary-btn text-[#03071280] px-8 py-2">E1</button>
+                        <button class="secondary-btn text-[#03071280] px-8 py-2">E2</button>
+                        <button class="secondary-btn text-[#03071280] px-8 py-2">E3</button>
+                        <button class="secondary-btn text-[#03071280] px-8 py-2">E4</button>
                     </div>
                 </div>
 
@@ -256,10 +295,10 @@
 
                     <!-- seats  -->
                     <div class="flex items-center justify-between flex-1">
-                        <button class="secondary-btn text-[#03071280] px-10">F1</button>
-                        <button class="secondary-btn text-[#03071280] px-10">F2</button>
-                        <button class="secondary-btn text-[#03071280] px-10">F3</button>
-                        <button class="secondary-btn text-[#03071280] px-10">F4</button>
+                        <button class="secondary-btn text-[#03071280] px-8 py-2">F1</button>
+                        <button class="secondary-btn text-[#03071280] px-8 py-2">F2</button>
+                        <button class="secondary-btn text-[#03071280] px-8 py-2">F3</button>
+                        <button class="secondary-btn text-[#03071280] px-8 py-2">F4</button>
                     </div>
                 </div>
 
@@ -269,10 +308,10 @@
 
                     <!-- seats  -->
                     <div class="flex items-center justify-between flex-1">
-                        <button class="secondary-btn text-[#03071280] px-10">G1</button>
-                        <button class="secondary-btn text-[#03071280] px-10">G2</button>
-                        <button class="secondary-btn text-[#03071280] px-10">G3</button>
-                        <button class="secondary-btn text-[#03071280] px-10">G4</button>
+                        <button class="secondary-btn text-[#03071280] px-8 ">G1</button>
+                        <button class="secondary-btn text-[#03071280] px-8 ">G2</button>
+                        <button class="secondary-btn text-[#03071280] px-8 ">G3</button>
+                        <button class="secondary-btn text-[#03071280] px-8 ">G4</button>
                     </div>
                 </div>
 
@@ -282,10 +321,10 @@
 
                     <!-- seats  -->
                     <div class="flex items-center justify-between flex-1">
-                        <button class="secondary-btn text-[#03071280] px-10">H1</button>
-                        <button class="secondary-btn text-[#03071280] px-10">H2</button>
-                        <button class="secondary-btn text-[#03071280] px-10">H3</button>
-                        <button class="secondary-btn text-[#03071280] px-10">H4</button>
+                        <button class="secondary-btn text-[#03071280] px-8 py-2">H1</button>
+                        <button class="secondary-btn text-[#03071280] px-8 py-2">H2</button>
+                        <button class="secondary-btn text-[#03071280] px-8 py-2">H3</button>
+                        <button class="secondary-btn text-[#03071280] px-8 py-2">H4</button>
                     </div>
                 </div>
 
@@ -295,10 +334,10 @@
 
                     <!-- seats  -->
                     <div class="flex items-center justify-between flex-1">
-                        <button class="secondary-btn text-[#03071280] px-10">I1</button>
-                        <button class="secondary-btn text-[#03071280] px-10">I2</button>
-                        <button class="secondary-btn text-[#03071280] px-10">I3</button>
-                        <button class="secondary-btn text-[#03071280] px-10">I4</button>
+                        <button class="secondary-btn text-[#03071280] px-8 py-2">I1</button>
+                        <button class="secondary-btn text-[#03071280] px-8 py-2">I2</button>
+                        <button class="secondary-btn text-[#03071280] px-8 py-2">I3</button>
+                        <button class="secondary-btn text-[#03071280] px-8 py-2">I4</button>
                     </div>
                 </div>
 
@@ -308,10 +347,10 @@
 
                     <!-- seats  -->
                     <div class="flex items-center justify-between flex-1">
-                        <button class="secondary-btn text-[#03071280] px-10">J1</button>
-                        <button class="secondary-btn text-[#03071280] px-10">J2</button>
-                        <button class="secondary-btn text-[#03071280] px-10">J3</button>
-                        <button class="secondary-btn text-[#03071280] px-10">J4</button>
+                        <button class="secondary-btn text-[#03071280] px-8 py-2">J1</button>
+                        <button class="secondary-btn text-[#03071280] px-8 py-2">J2</button>
+                        <button class="secondary-btn text-[#03071280] px-8 py-2">J3</button>
+                        <button class="secondary-btn text-[#03071280] px-8 py-2">J4</button>
                     </div>
                 </div>
             </div>
