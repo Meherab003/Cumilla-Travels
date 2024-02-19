@@ -63,13 +63,10 @@
                             <br>
                             <span class="primary-text-color">Cumilla Travels</span>
                         </h1>
-                        <p class="max-w-[700px] mb-8 paragraph-design text-white">“Explore the World with Cumilla
-                            Travels!” Book
-                            your bus tickets
-                            hassle-free
-                            and
-                            embark on exciting journeys to your favorite destinations.</p>
-                        <button class="btn primary-btn text-black rounded-xl">Buy Tickets</button>
+                        <p class="max-w-[700px] mb-8 paragraph-design text-white">"Explore the World with
+                            CumillaTravels!" Book your bus tickets hassle-free and embark on exciting journeys to your
+                            favorite destinations.</p>
+                        <a href="#main-section" class="btn primary-btn text-black rounded-xl">Buy Tickets</a>
                     </div>
                 </div>
             </div>
@@ -160,7 +157,7 @@
 
 
     <!-- Main -->
-    <main class="rounded-t-[88px] border-t-[#1DD100] border-t-2 bg-[#F7F8F8] p-28 mt-32">
+    <main id="main-section" class="rounded-t-[88px] border-t-[#1DD100] border-t-2 bg-[#F7F8F8] p-28 mt-32">
 
         <!-- title and description -->
         <div class="flex flex-col justify-center items-center">
@@ -175,8 +172,8 @@
         <section class="flex bg-white m-auto rounded-3xl p-16 relative">
             <div class="flex flex-col flex-1 pr-16">
                 <div class="flex justify-between mb-8">
-                    <div class="flex gap-3">
-                        <img src="images/bus-logo.png" alt="">
+                    <div class="flex items-center gap-3">
+                        <img class="w-[68.571px] h-[48px]" src="images/bus-logo.png" alt="">
                         <div>
                             <h2 class="title-design text-3xl text-start">Gram Bangla Poribohon</h2>
                             <p class="paragraph-design text-start">Coach-009-WEB ! AC_Business</p>
@@ -218,10 +215,16 @@
         <!-- Select Your Tickets Part -->
         <section class="flex bg-white m-auto rounded-3xl mt-12 p-8">
             <div class="flex-1 flex flex-col gap-6 p-8 pt-0">
-                <h1 class="text-2xl font-semibold">Select Your Seat</h1>
-                <div class="flex justify-between">
+                <h1 class="text-2xl font-semibold border-b border-dashed border-[#03071233] pb-3">Select Your Seat</h1>
+                <div class="flex justify-between border-b border-dashed border-[#03071233] pb-3">
                     <img src="images/seat-green.png" alt="">
                     <img src="images/seat-green-filled.png" alt="">
+                </div>
+
+                <!-- Steering  -->
+                <div class="flex items-center justify-end ">
+                    <button class="secondary-btn text-[#03071280] px-8 py-2"><img src="images/steering-wheel.svg"
+                            alt=""></button>
                 </div>
 
                 <!-- Row A  -->
@@ -308,10 +311,10 @@
 
                     <!-- seats  -->
                     <div class="flex items-center justify-between flex-1">
-                        <button class="secondary-btn text-[#03071280] px-8 ">G1</button>
-                        <button class="secondary-btn text-[#03071280] px-8 ">G2</button>
-                        <button class="secondary-btn text-[#03071280] px-8 ">G3</button>
-                        <button class="secondary-btn text-[#03071280] px-8 ">G4</button>
+                        <button class="secondary-btn text-[#03071280] px-8 py-2">G1</button>
+                        <button class="secondary-btn text-[#03071280] px-8 py-2">G2</button>
+                        <button class="secondary-btn text-[#03071280] px-8 py-2">G3</button>
+                        <button class="secondary-btn text-[#03071280] px-8 py-2">G4</button>
                     </div>
                 </div>
 
@@ -330,20 +333,20 @@
 
                 <!-- Row I  -->
                 <div class="flex items-center gap-8">
-                    <p class="font-secondary text-lg font-medium text-[#03071280]">I</p>
+                    <p class="font-secondary text-lg font-medium text-[#03071280] px-1">I</p>
 
                     <!-- seats  -->
                     <div class="flex items-center justify-between flex-1">
-                        <button class="secondary-btn text-[#03071280] px-8 py-2">I1</button>
-                        <button class="secondary-btn text-[#03071280] px-8 py-2">I2</button>
-                        <button class="secondary-btn text-[#03071280] px-8 py-2">I3</button>
-                        <button class="secondary-btn text-[#03071280] px-8 py-2">I4</button>
+                        <button class="secondary-btn text-[#03071280] px-9 py-2">I1</button>
+                        <button class="secondary-btn text-[#03071280] px-9 py-2">I2</button>
+                        <button class="secondary-btn text-[#03071280] px-9 py-2">I3</button>
+                        <button class="secondary-btn text-[#03071280] px-9 py-2">I4</button>
                     </div>
                 </div>
 
                 <!-- Row J  -->
                 <div class="flex items-center gap-8">
-                    <p class="font-secondary text-lg font-medium text-[#03071280]">J</p>
+                    <p class="font-secondary text-lg font-medium text-[#03071280] px-[2px]">J</p>
 
                     <!-- seats  -->
                     <div class="flex items-center justify-between flex-1">
@@ -357,14 +360,15 @@
 
             <!-- Input Section  -->
             <div class="p-8 pt-0 border-l-2 border-dashed border-[#0307124D] flex flex-col gap-6">
-                <h1 class="text-2xl font-semibold">Select Your Seat</h1>
+                <h1 class="text-2xl font-semibold border-b border-dashed border-[#03071233] pb-3">Select Your Seat</h1>
                 <div class="bg-[#F7F8F8] rounded-3xl p-8 flex flex-col gap-4">
-                    <div class="flex justify-between">
-                        <p class="font-secondary font-medium">Seat</p>
+                    <div class="flex justify-between border-b border-dashed border-[#03071233] pb-3">
+                        <p class="font-secondary font-medium">Seat <sup
+                                class="text-white text-sm font-bold bg-[#1dd100] px-2 py-0 rounded-lg">0</sup></p>
                         <p class="font-secondary font-medium">Class</p>
                         <p class="font-secondary font-medium">Price</p>
                     </div>
-                    <div class="flex justify-between">
+                    <div class="flex justify-between border-b border-solid border-[#03071233] pb-3">
                         <p class="font-secondary font-medium  text-[#03071280]">C2</p>
                         <p class="font-secondary font-medium  text-[#03071280]">Economy</p>
                         <p class="font-secondary font-medium  text-[#03071280]">550</p>
@@ -389,11 +393,12 @@
                 </div>
 
                 <!-- Mail And Number -->
+
                 <!-- Name  -->
                 <div>
                     <label class="form-control w-full">
                         <div class="label">
-                            <span class="label-text font-secondary font-semibold">Passenger Name*</span>
+                            <span class="text-lg label-text font-secondary font-semibold">Passenger Name*</span>
                         </div>
                         <input type="text" placeholder="Enter your name"
                             class="input input-bordered w-full font-secondary" />
@@ -404,7 +409,7 @@
                 <div>
                     <label class="form-control w-full">
                         <div class="label">
-                            <span class="label-text font-secondary font-semibold">Phone Number*</span>
+                            <span class="text-lg label-text font-secondary font-semibold">Phone Number*</span>
                         </div>
                         <input type="text" placeholder="Enter your phone number"
                             class="input input-bordered w-full font-secondary" />
@@ -415,7 +420,7 @@
                 <div>
                     <label class="form-control w-full">
                         <div class="label">
-                            <span class="label-text font-secondary font-semibold">Email ID</span>
+                            <span class="text-lg label-text font-secondary font-semibold">Email ID</span>
                         </div>
                         <input type="email" placeholder="Enter your email id"
                             class="input input-bordered w-full font-secondary" />
@@ -423,7 +428,8 @@
                 </div>
 
                 <!-- You can open the modal using ID.showModal() method -->
-                <button class="btn primary-btn rounded-xl w-full" onclick="my_modal_4.showModal()">Next</button>
+                <button class="btn primary-btn rounded-2xl w-full" onclick="my_modal_4.showModal()"
+                    disabled>Next</button>
                 <dialog id="my_modal_4" class="modal">
                     <div
                         class="modal-box w-11/12 flex flex-col justify-center items-center text-center px-20 font-secondary">
