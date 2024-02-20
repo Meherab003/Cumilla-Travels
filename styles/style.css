@@ -8,6 +8,10 @@ body {
   color: #1dd100;
 }
 
+.primary-background {
+  background-color: #1dd100;
+}
+
 .font-primary {
   font-family: "Raleway", sans-serif;
 }
@@ -31,7 +35,6 @@ body {
 
 .secondary-btn {
   background-color: #0307120d;
-  box-shadow: 5px 5px 10px #03050e0d;
   padding: 1rem;
   border-radius: 12px;
   font-family: Inter;
@@ -40,11 +43,6 @@ body {
 }
 .secondary-btn:hover {
   background-color: white;
-  box-shadow: 5px 5px 10px #0307120d;
-}
-
-.secondary-btn:focus {
-  background-color: var(--primary-color);
 }
 
 .paragraph-design {
@@ -61,4 +59,11 @@ body {
   font-family: Raleway;
   font-size: 40px;
   font-weight: 700;
+}
+
+.ticket-container-items {
+  color: rgba(3, 7, 18, 0.6);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
 }
