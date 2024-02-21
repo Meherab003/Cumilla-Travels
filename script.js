@@ -25,13 +25,13 @@ function getClickedButton(seat) {
       bookedSeats.push(seat);
       addTicketContainer(seat);
       totalPriceCalculation(seat);
+      grandTotalCalculation(seat);
     } else {
       alert("You can select 4 Seats Maximum");
     }
   } else {
     alert("You've already selected the seat");
   }
-  console.log(bookedSeats);
 }
 
 //Assigned Functions
@@ -78,12 +78,11 @@ function addTicketDetail(elementID) {
 function totalPriceCalculation(elementID) {
   const perTicketPrice = parseInt(ticketPrice.innerText);
   const totalTicketPriceCalc = perTicketPrice * bookedSeats.length;
-  return (
-    (totalTicketPrice.innerText = totalTicketPriceCalc), totalTicketPriceCalc
-  );
+
+  return (totalTicketPrice.innerText = totalTicketPriceCalc);
 }
 
-//grand Total With coupon
+//apply button
 couponInput.addEventListener("click", function () {
   if (bookedSeats.length == 4) {
     applyButton.removeAttribute("disabled");
@@ -94,67 +93,64 @@ couponInput.addEventListener("click", function () {
   }
 });
 
-// function Compare(){
-//   if(bookedSeats.length == 4){
-//     couponConfirm(),
-//   }
-// }
-
-//Apply Button trigged
-// applyButton.addEventListener("click", function () {
-//   const perTicketPrice = parseInt(ticketPrice.innerText);
-//   const totalTicketPriceCalc = perTicketPrice * bookedSeats.length;
-//   inputContainer.classList.add("hidden");
-//   if (couponInput.value == "Couple 20") {
-//     const discountCal = (totalTicketPriceCalc * 15) / 100;
-//   } else if (couponInput.value == "NEW15") {
-//     const discountCal = (totalTicketPriceCalc * 20) / 100;
-//   }
-
-//   const discountName = document.createElement("p");
-//   discountName.innerText = "Discount";
-//   const discount = document.createElement("p");
-//   discount.innerText = discountCal;
-//   discountDiv.appendChild(discountName), discountDiv.appendChild(discount);
-// });
-
-function applyCouponCode() {
+//Coupon input
+let discount;
+applyButton.addEventListener("click", function () {
+  let grandTotalCalc;
   if (
-    couponInput.value === couple20.innerText ||
-    couponInput.value === new15.innerText
+    couponInput.value == couple20.innerText ||
+    couponInput.value == new15.innerText
   ) {
-    if (couponInput.value === couple20.innerText) {
-      const discountPrice = (parseFloat(totalPrice.innerText) * 15) / 100;
+    inputContainer.setAttribute("hidden", "");
 
-      const discountName = document.createElement("p");
-      discountName.innerText = "Discount";
-      const discount = document.createElement("p");
-      discount.innerText = discountPrice;
-
-      discountDiv.appendChild(discountName), discountDiv.appendChild(discount);
-      grandTotal.innerText = parseFloat(grandTotal.innerText) - discountPrice;
+    if (couponInput.value == couple20.innerText) {
+      discount = (parseFloat(totalTicketPrice.innerText) * 20) / 100;
+      console.log("Hello");
     } else {
-      const discountPrice = (parseFloat(totalPrice.innerText) * 20) / 100;
-      const discountName = document.createElement("p");
-      discountName.innerText = "Discount";
-      const discount = document.createElement("p");
-      discount.innerText = discountPrice;
-
-      discountDiv.appendChild(discountName), discountDiv.appendChild(discount);
-      grandTotal.innerText = parseFloat(grandTotal.innerText) - discountPrice;
+      discount = (parseFloat(totalTicketPrice.innerText) * 15) / 100;
     }
-    inputContainer.classList.add("hidden");
+    const discountName = document.createElement("p");
+    discountName.innerText = "Discount";
+    const discountContainer = document.createElement("p");
+    discountContainer.innerText = discount;
+
+    grandTotalCalc = parseFloat(totalTicketPrice.innerText) - discount;
+
+    discountName.classList.add("font-secondary");
+    discountName.classList.add("font-medium");
+    discountContainer.classList.add("font-medium");
+    discountContainer.classList.add("font-secondary");
+    discountDiv.classList.add("flex");
+    discountDiv.classList.add("justify-between");
+    discountDiv.appendChild(discountName);
+    discountDiv.appendChild(discountContainer);
   } else {
     alert("Invalid Coupon");
   }
-  couponInput.value = "";
+  return (grandTotal.innerText = grandTotalCalc);
+});
+
+//grand Total
+function grandTotalCalculation(elementID) {
+  const grandTotalCalc = parseFloat(totalTicketPrice.innerText);
+
+  return (grandTotal.innerText = grandTotalCalc);
 }
 
-confirmButton.addEventListener("click", function () {
-  if (bookedSeats.length >= 1 && phoneNumber.value) {
-    confirmButton.removeAttribute("disabled");
-  } else {
-    alert("select minimum one seat and provide phone number");
-    confirmButton.setAttribute("disables", true);
+//Confirm Button
+// confirmButton.addEventListener("mouseover", function () {
+//   alert("Select One seat and your Phone Number");
+// });
+
+// phoneNumber.addEventListener("keyup", function confirmButtonFunction() {
+//   if (bookedSeats.length >= 1) {
+//     confirmButton.removeAttribute("disabled");
+//   }
+// });
+
+confirmButton.addEventListener("mousemove", function () {
+  if (!bookedSeats.length >= 1 && !phoneNumber.value) {
+    alert("select minimum one seat and provide a phone number");
+    confirmButton.setAttribute("disabled");
   }
 });
