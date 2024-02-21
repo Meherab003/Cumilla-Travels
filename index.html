@@ -16,7 +16,7 @@
 
 
         <!-- Navigation -->
-        <nav class="w-[89%] m-auto lg:mb-9">
+        <nav class="w-[89%] m-auto lg:mb-9" id="navigation">
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
                     <div class="dropdown">
@@ -111,9 +111,9 @@
         <h2 class="title-design mb-12">Best offers for you</h2>
 
         <!-- Discount Container -->
-        <div class="flex justify-between m-auto gap-8 mb-12">
+        <div class="flex justify-between m-auto gap-8 mb-12 h-64">
             <!-- Discount 1 -->
-            <div class="flex gap-10 bg-[#FFBF0F] rounded-3xl relative">
+            <div class="flex gap-10 bg-[#FFBF0F] rounded-3xl ">
                 <!-- Discount-text -->
                 <div class="flex flex-col justify-center align-center p-12">
                     <h2 class="text-5xl font-black font-secondary text-black">15% OFF</h2>
@@ -121,16 +121,16 @@
                     <p class="text-lg font-secondary font-medium light-black">use by February 2024</p>
                 </div>
 
+                <img src="images/cupon-devider.png" alt="">
+
                 <!-- Coupon -->
-                <div class="flex flex-col border-l-2 border-dashed border-white p-12 align-center">
+                <div class="flex flex-col p-12 align-center">
                     <h2 class="text-3xl font-bold text-center text-black" id="new-15">NEW15</h2>
                     <p class="text-xl font-medium light-black text-center">Coupon Code</p>
                 </div>
-                <div class="w-[60px] h-[60px] bg-white rounded-full absolute top-[-30px] left-[320px]"></div>
-                <div class="w-[60px] h-[60px] bg-white rounded-full absolute top-[170px] left-[320px]"></div>
             </div>
             <!-- Discount 2 -->
-            <div class="flex gap-10 bg-[#F78C9C] rounded-3xl relative">
+            <div class="flex gap-10 bg-[#F78C9C] rounded-3xl">
                 <!-- Discount-text -->
                 <div class="flex flex-col justify-center align-center p-12">
                     <h2 class="text-5xl font-black font-secondary text-black">20% OFF</h2>
@@ -138,13 +138,13 @@
                     <p class="text-lg font-secondary font-medium light-black">use by February 2024</p>
                 </div>
 
+                <img src="images/cupon-devider.png" alt="">
+
                 <!-- Coupon -->
-                <div class="flex flex-col border-l-2 border-dashed border-white p-12 align-center">
+                <div class="flex flex-col p-12 align-center">
                     <h2 class="text-3xl font-bold text-center text-black" id="couple-20">Couple 20</h2>
                     <p class="text-xl font-medium light-black text-center">Coupon Code</p>
                 </div>
-                <div class="w-[60px] h-[60px] bg-white rounded-full absolute top-[-30px] left-[320px]"></div>
-                <div class="w-[60px] h-[60px] bg-white rounded-full absolute top-[170px] left-[320px]"></div>
             </div>
         </div>
         <button
@@ -168,7 +168,7 @@
         </div>
 
         <!-- ticket Information -->
-        <section class="flex bg-white m-auto rounded-3xl p-16 relative">
+        <section class="flex bg-white m-auto rounded-3xl p-16">
             <div class="flex flex-col flex-1 pr-16">
                 <div class="flex justify-between mb-8">
                     <div class="flex items-center gap-3">
@@ -207,8 +207,7 @@
                 <h2 class="title-design text-3xl text-start"><span id="ticket-price">550</span> Taka</h2>
                 <p class="text-2xl font-semibold text-[#03071299]">Per Seat</p>
             </div>
-            <div class="w-[100px] h-[100px] bg-[#F7F8F8] rounded-full absolute top-[-50px] left-[815px]"></div>
-            <div class="w-[100px] h-[100px] bg-[#F7F8F8] rounded-full absolute top-[410px] left-[815px]"></div>
+
         </section>
 
         <!-- Select Your Tickets Part -->
@@ -488,7 +487,7 @@
                         <div class="modal-action">
                             <form method="dialog">
                                 <!-- if there is a button, it will close the modal -->
-                                <button
+                                <button href="#navigation"
                                     class="btn bg-[#27AE60] px-24 rounded-full text-xl font-semibold text-white">Continue</button>
                             </form>
                         </div>

@@ -149,8 +149,12 @@ function grandTotalCalculation(elementID) {
 // });
 
 confirmButton.addEventListener("mousemove", function () {
-  if (!bookedSeats.length >= 1 && !phoneNumber.value) {
-    alert("select minimum one seat and provide a phone number");
-    confirmButton.setAttribute("disabled");
+  if (bookedSeats.length >= 1 && phoneNumber.value) {
+    confirmButton.removeAttribute("disabled");
+  } else {
+    alert(
+      "NEXT Button: You to select minimum one seat and provide a phone number"
+    );
+    confirmButton.setAttribute("disables", true);
   }
 });
